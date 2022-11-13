@@ -1,4 +1,4 @@
-# To run the script use the following.
+# Name this script Test.ps1 and use the following to run.
 #
 # .\Test.ps1 -Array "Test1","Test2","Test3" -String "Hello World"
 
