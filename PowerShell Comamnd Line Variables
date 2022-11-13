@@ -1,0 +1,22 @@
+# To run the script use the following.
+#
+# .\Test.ps1 -Array "Test1","Test2","Test3" -String "Hello World"
+
+[CmdletBinding()]
+param
+(
+    [Parameter(Position=0,mandatory=$true)]
+    [array] $Array,
+    [Parameter(Position=1,mandatory=$false)]
+    [string] $String
+)
+
+if ($Array) {
+    Write-Host "`nOutputting Array's value"
+    foreach ($Input in $Array) {
+        Write-Host $Input
+    }
+}
+else {Write-Host "No data provided."}
+
+Write-Host "`nOutputting String's value`n$String"
